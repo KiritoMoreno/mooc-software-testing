@@ -22,4 +22,16 @@ public class GettingStartedTest {
         int result = new GettingStarted().addFive(-20);
         Assertions.assertEquals(-15,result);
     }
+
+    @Test
+    public void addFiveTo50(){
+        int result = new GettingStarted().addFive(50);
+        Assertions.assertEquals(55,result);
+    }
+
+    @Test
+    public void addFiveToMinus15(){
+        int result = new GettingStarted().addFive(-15);
+        Assertions.assertEquals(-10,result);
+    }
 }
