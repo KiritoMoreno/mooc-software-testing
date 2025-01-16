@@ -7,6 +7,26 @@ public class RomanNumeralTest {
 
 
     @Test
+    public void singleNum(){
+        RomanNumeral roman = new RomanNumeral();
+        int result = roman.convert("V");
+        Assertions.assertEquals(5,result);
+    }
+
+    @Test
+    public void numWithManyDig(){
+        RomanNumeral roman = new RomanNumeral();
+        int result = roman.convert("XIII");
+        Assertions.assertEquals(13,result);
+    }
+
+    @Test
+    public void numWithSubDigit(){
+        RomanNumeral roman = new RomanNumeral();
+        int result = roman.convert("IX");
+        Assertions.assertEquals(9,result);
+    }
+    @Test
     public void singleNumber() {
         RomanNumeral roman = new RomanNumeral();
         int result = roman.convert("I");

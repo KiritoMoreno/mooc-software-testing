@@ -3,7 +3,7 @@ package tudelft.numfinder;
 public class NumFinder {
     // Smallest is initialized to the maximum possible integer value, ensuring that any number in the input array will be smaller initially.
     private int smallest = Integer.MAX_VALUE;
-    
+
     // Largest is initialized to the minimum possible integer value, ensuring that any number in the input array will be larger initially.
     private int largest = Integer.MIN_VALUE;
 
