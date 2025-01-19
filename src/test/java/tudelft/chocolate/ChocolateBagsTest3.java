@@ -5,6 +5,8 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
 public class ChocolateBagsTest3 {
+    //Introduce clirity and organization by labeling each test case with a partition.
+    // this way -> name = "{partition name}: ({small}, {big}, {total}={expected}")
     @ParameterizedTest(name = "{0}: ({1}, {2}, {3}) = {4}")
     @CsvSource({
             // The total is higher than the amount of small and big bars.
