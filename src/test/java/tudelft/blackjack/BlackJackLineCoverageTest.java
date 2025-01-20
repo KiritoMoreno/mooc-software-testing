@@ -16,4 +16,10 @@ public class BlackJackLineCoverageTest {
         int result = new BlackJack().play(10, 9);
         Assertions.assertEquals(10, result);
     }
+
+    @Test
+    public void rightPlayerWins(){
+        int result = new BlackJack().play(8,20);
+        Assertions.assertEquals(20,result);
+    }
 }
